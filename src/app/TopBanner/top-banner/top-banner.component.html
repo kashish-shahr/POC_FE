@@ -1,0 +1,21 @@
+<div class="top">
+  <div class="top-banner-container">
+    <div class="top-banner-wrapper row">
+      <div class="top-banner-text column text-column">
+        <h4 class="top-banner-text-heading">
+          {{ topBannerData[currentBannerNumber].Heading }}
+        </h4>
+        <div class="top-banner-text-description">
+          {{ topBannerData[currentBannerNumber].Description }}
+        </div>
+
+        <button class="top-banner-text-button">Submit</button>
+      </div>
+      <div class="top-banner-image column img-column">
+        <img src="{{ topBannerData[currentBannerNumber].ImageUrl }}" alt="" />
+      </div>
+    </div>
+    
+  </div>
+  <!-- <button (click)="onTopBannerNext()" >Next</button> -->
+</div>

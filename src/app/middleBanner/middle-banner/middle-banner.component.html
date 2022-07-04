@@ -1,0 +1,20 @@
+<div class="middle">
+    <div class="middle-banner-container row">
+        <div class="middle-banner-wrapper">
+            <div class="middle-banner-left column">
+                <h5>{{middleBannerLeftData.Heading}}</h5>
+                <h6>{{middleBannerLeftData.SubHeading}}</h6>
+
+                <p>{{middleBannerLeftData.Description}}</p>
+            </div>
+            <div class="middle-banner-right column" *ngFor="let item of middleBannerList">
+                <div class="middle-banner-right-columns ">
+                    <img src={{item.ImageUrl}} alt="">
+                    <p>{{item.Description}}</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

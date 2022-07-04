@@ -1,0 +1,42 @@
+.middle{
+    
+    padding: 3.125rem;
+    margin: 1.5rem 3rem; 
+}
+img{
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.column{
+    width: auto;
+    float:left;
+    margin: 0.5rem;
+    
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .middle-banner-left{
+    width: 30rem;
+    padding: 1rem;
+
+  }
+  .middle-banner-right{
+    width: 13rem;
+
+  }
+  .dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }

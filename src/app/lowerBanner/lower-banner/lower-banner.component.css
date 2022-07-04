@@ -1,0 +1,28 @@
+.lower-banner-container
+{
+    background-color: #f1f3f7;
+    padding: 3.125rem;
+    margin: 1.5rem 3rem;
+}
+.lower-banner-move-right{
+    height: 2rem;
+    width: 2em;
+    border-radius: 1rem;
+    align-items: center;
+    background-color: #fffffe;
+    align-items: flex-end;
+}
+.lower-banner-move-left{
+    height: 2rem;
+    width: 2em;
+    border-radius: 1rem;
+    
+    background-color: #fffffe;
+    align-items: flex-start;
+}
+.lower-banner-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    
+}
