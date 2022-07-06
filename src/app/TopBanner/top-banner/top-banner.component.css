@@ -1,32 +1,122 @@
-.top-banner-container{
+.top-banner-container {
     background-color: #f1f3f7;
-    padding: 3.125rem;
-    margin: 1.5rem 3rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2.75rem;
 }
-img{
+
+.top-banner-wrapper{
+    width: 100%;
+    padding: 3.125rem 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.top-banner-text-wrapper {
+    display: grid;
+    gap: 10px;
+}
+
+.top-banner-text {
     width: 100%;
 }
 
-.row:after{
-    clear: both;
- display: table;   
+.top-banner-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.column{
-float:left;
-width: 35rem;
-padding: 5px;
-}
-.img-column{
-    margin-left: 5rem;
-width: 20rem;
-}
-.text-column{
 
+.top-banner-image img {
+    width: 100%;
 }
-span{
-    display: inline-block;
-    width: 180px;
-    white-space: nowrap;
-    overflow: hidden !important;
-    text-overflow: ellipsis;
+
+.top-banner-text-button {
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.top-banner-current-slide {
+    margin: 0rem auto 1rem auto;
+    display: flex;
+}
+
+.top-banner-current-slide-disc {
+    padding: 0rem 0.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 991px) {
+    .top-banner-container {
+        margin: 1rem 1.25rem;
+    }
+
+    .top-banner-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        row-gap: 40px;
+        column-gap: 0rem;
+        padding: 2rem 3.25rem;
+    }
+
+    .top-banner-image img {
+        width: 80%;
+    }
+
+    .top-banner-current-slide {
+        margin: 0rem auto 1.25rem auto;
+    }
+
+    .top-banner-text-heading {
+        margin-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .top-banner-wrapper {
+        padding: 1rem 2.25rem;
+    }
+    
+    .top-banner-image img {
+        width: 100%;
+    }
+
+    .top-banner-text-heading {
+        font-size: 1.375rem;
+    }
+
+    .top-banner-text-description {
+        font-size: 1rem;
+    }
+
+    .top-banner-text-button {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .top-banner-wrapper {
+        padding: 1rem 1.5rem;
+    }
+
+    .top-banner-text-heading {
+        font-size: 1.25rem;
+    }
+
+    .top-banner-text-description {
+        font-size: 0.875rem;
+    }
+
+    .top-banner-text-button {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.625rem;
+    }
 }

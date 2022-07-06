@@ -1,0 +1,12 @@
+<div class="nav-container">
+        <nav>
+                <a href="#" *ngFor="let linkHeader of navLinks; let i=index;" (click)="setActiveLink(i)">
+                        <div *ngIf="i===activeLink" class="nav-active-link">
+                                {{linkHeader}}
+                        </div>
+                        <div *ngIf="i!==activeLink" class="nav-inactive-link">
+                                {{linkHeader}}
+                        </div>
+                </a>
+        </nav>
+</div>

@@ -10,6 +10,7 @@ export class TopBannerComponent implements OnInit {
 
   constructor() { }
   topBannerData:TopBannerData[];
+  requiredTopBannerData:TopBannerData[];
   currentBannerNumber:number=0;
   intervalId:any;
   
@@ -17,9 +18,6 @@ export class TopBannerComponent implements OnInit {
     this.intervalId= setInterval(()=>{
       this.onTopBannerNext()
     },5000);
-
-
-    
     
     this.topBannerData=[
       {
@@ -46,14 +44,20 @@ export class TopBannerComponent implements OnInit {
         Priority:4
       }];
       this.topBannerData.sort((topBanner1,topBanner2)=>topBanner1.Priority-topBanner2.Priority);
-
+      this.requiredTopBannerData = this.topBannerData.slice(0,3);
   }
+
+  
   onTopBannerNext():void{
     if(this.currentBannerNumber<2){
       this.currentBannerNumber++;
     }else if(this.currentBannerNumber==2){
       this.currentBannerNumber=0;
     }
+  }
+
+  setCurrentSlide(index: number):void{
+    this.currentBannerNumber = index;
   }
   
 }

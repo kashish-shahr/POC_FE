@@ -10,6 +10,13 @@ import { HomepageComponent } from './HomePage/homepage/homepage.component';
 import { TopBannerComponent } from './TopBanner/top-banner/top-banner.component';
 import { MiddleBannerComponent } from './middleBanner/middle-banner/middle-banner.component';
 import { LowerBannerComponent } from './lowerBanner/lower-banner/lower-banner.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { routingArr } from './app.routing';
+
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,13 @@ import { LowerBannerComponent } from './lowerBanner/lower-banner/lower-banner.co
     HomepageComponent,
     TopBannerComponent,
     MiddleBannerComponent,
-    LowerBannerComponent
+    LowerBannerComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavBarComponent,
+    
+    PageNotFoundComponent,
+         LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +39,7 @@ import { LowerBannerComponent } from './lowerBanner/lower-banner/lower-banner.co
     ReactiveFormsModule,
     QuillModule,
     HttpClientModule,
+    routingArr
   ],
   providers: [],
   bootstrap: [AppComponent]

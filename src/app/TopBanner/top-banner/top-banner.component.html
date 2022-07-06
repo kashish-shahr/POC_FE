@@ -1,21 +1,28 @@
-<div class="top">
-  <div class="top-banner-container">
-    <div class="top-banner-wrapper row">
-      <div class="top-banner-text column text-column">
+<div class="top-banner-container">
+  <div class="top-banner-wrapper">
+    <div class="top-banner-text">
+      <div class="top-banner-text-wrapper">
         <h4 class="top-banner-text-heading">
-          {{ topBannerData[currentBannerNumber].Heading }}
+          {{ requiredTopBannerData[currentBannerNumber].Heading }}
         </h4>
         <div class="top-banner-text-description">
-          {{ topBannerData[currentBannerNumber].Description }}
+          {{ requiredTopBannerData[currentBannerNumber].Description }}
         </div>
-
-        <button class="top-banner-text-button">Submit</button>
-      </div>
-      <div class="top-banner-image column img-column">
-        <img src="{{ topBannerData[currentBannerNumber].ImageUrl }}" alt="" />
+        <button class="top-banner-text-button">View More</button>
       </div>
     </div>
-    
+    <div class="top-banner-image">
+      <img src="{{ requiredTopBannerData[currentBannerNumber].ImageUrl }}" alt=""/>
+    </div>
   </div>
-  <!-- <button (click)="onTopBannerNext()" >Next</button> -->
+  <div class="top-banner-current-slide">
+    <div class="top-banner-current-slide-disc" *ngFor="let banner of requiredTopBannerData; let i=index" (click)="setCurrentSlide(i)">
+      <div class="top-banner-current-slide-disc-current" *ngIf="i===currentBannerNumber">
+        &#9673;
+      </div>
+      <div class="top-banner-current-slide-disc-not-current" *ngIf="i!==currentBannerNumber">
+        &#9678;
+      </div>
+    </div>
+  </div>
 </div>
