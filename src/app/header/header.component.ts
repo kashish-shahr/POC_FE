@@ -11,5 +11,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  onNotificationClick(){
+    console.log("Notidication clicked");
+    
+  }
 }

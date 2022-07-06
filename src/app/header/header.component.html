@@ -4,8 +4,10 @@
     <span>Language <strong>English</strong> | Tamil | Hindi</span>
   </div>
   <div class="header-options">
-    <button class="header-options-item">Notification</button>
-    <select class="header-options-item">
+    <div class="header-options-item" (click)="onNotificationClick()">
+      <img class="header-options-notification" src="../../assets/pngs/notification.png" alt="">
+    </div>
+    <select class="header-options-item header-options-item-profile">
       <option>Profile</option>
     </select>
   </div>
