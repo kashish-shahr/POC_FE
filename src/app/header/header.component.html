@@ -7,8 +7,17 @@
     <div class="header-options-item" (click)="onNotificationClick()">
       <img class="header-options-notification" src="../../assets/pngs/notification.png" alt="">
     </div>
-    <select class="header-options-item header-options-item-profile">
-      <option>Profile</option>
-    </select>
+
+
+    <div *ngIf="logFlag" class="dropdown">
+      <button class="dropbtn"><div class="header-options-profile"></div> Profile <img src="assets/pngs/down_arrow.png" alt=""></button>
+      <div class="dropdown-content">
+        <button (click)="onLogOutClick()" >Log Out</button>
+      </div>
+    </div>
+    <div *ngIf="!logFlag" class="login">
+      <button (click)="onLogInButtonClick()">Log In</button>
+    </div>
+    
   </div>
 </header>

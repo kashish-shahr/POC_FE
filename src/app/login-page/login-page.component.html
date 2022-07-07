@@ -1,1 +1,44 @@
-<p>login-page works!</p>
+<app-header></app-header>
+<main>
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+    <div class="email-input">
+      <label for="email">Email</label>
+      <br>
+      <input
+        formControlName="email"
+        type="text"
+        placeholder="Enter your email address."
+      />
+      <label
+        *ngIf="
+          loginForm.get('user_email').hasError('required') &&
+          !loginForm.get('user_email').pristine
+        "
+        for="email"
+        >Email should not be empty</label
+      >
+    </div>
+
+    <br />
+    <div class="password-input">
+      <label style="font-size: 20px"> Password</label>
+      <br />
+      <input
+        formControlName="password"
+        type="password"
+        placeholder="Enter Password"
+      />
+      <label
+        *ngIf="
+          loginForm.get('user_password').hasError('required') &&
+          !loginForm.get('user_password').pristine
+        "
+      >
+        Password should not be empty</label
+      >
+      <br>
+      <br>
+      <button type="submit">LogIn</button>
+    </div>
+  </form>
+</main>
