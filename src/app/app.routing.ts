@@ -8,12 +8,13 @@ import { UserauthguardService } from "./userauthguard.service";
 const arr:Routes=[
     
     {path:'',component:UserRolesComponent},
+    {path:'login',component:LoginPageComponent},
     {
     path:'nav',canActivate:[UserauthguardService],component:MainNavComponent,children:[
     {path:'',component:HomepageComponent},
     {path:'HomePage',component:HomepageComponent},
     {path:'pagenotfound',component:PageNotFoundComponent},
-    {path:'loginPage',component:LoginPageComponent},
+    
     {path:'**',component:PageNotFoundComponent}
 ]
 }
