@@ -3,13 +3,14 @@
   <div class="header-language">
     <span>Language <strong>English</strong> | Tamil | Hindi</span>
   </div>
+
+  <div *ngIf="logFlag" class="dropdown">
+
   <div class="header-options">
     <div class="header-options-item" (click)="onNotificationClick()">
       <img class="header-options-notification" src="../../assets/pngs/notification.png" alt="">
     </div>
 
-
-    <div *ngIf="logFlag" class="dropdown">
       <button class="dropbtn"><div class="header-options-profile"></div> Profile <img src="assets/pngs/down_arrow.png" alt=""></button>
       <div class="dropdown-content">
         <button (click)="onLogOutClick()" >Log Out</button>

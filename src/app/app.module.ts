@@ -18,6 +18,7 @@ import { routingArr } from './app.routing';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
+import { UserRolesComponent } from './user-roles/user-roles.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
     PageNotFoundComponent,
          LoginPageComponent,
          MainNavComponent,
+         UserRolesComponent,
          
   ],
   imports: [
