@@ -12,7 +12,7 @@ import { UserauthguardService } from "./userauthguard.service";
 const arr:Routes=[
     
     {path:'',component:UserRolesComponent},
-    {path:'login',component:LoginPageComponent},
+    {path:'login/:userRole',component:LoginPageComponent},
     {
     path:'nav',canActivate:[UserauthguardService],component:MainNavComponent,children:[
     {path:'',component:HomepageComponent},
