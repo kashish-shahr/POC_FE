@@ -39,7 +39,7 @@
     width: 60%;
     display: flex;
     justify-content: center;
-    height: 20rem;
+    height: auto;
 }
 
 .lower-banner-image img {

@@ -35,7 +35,10 @@
 }
 
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+
+
+}
 
 
 @media screen and (max-width: 767px) {
@@ -70,12 +73,21 @@
   }
 
   .header-language {
-    font-size: 0.625rem;
+    font-size: 0.525rem;
   }
 
   .header-options {
+    grid-template-columns: auto auto;
     gap: 0.4rem;
   }
+  .header{
+   
+    padding: 0.5rem 0.5rem;
+}
+.header-options-notification{
+  width: 1.4rem;
+  cursor: pointer;
+}
 }
 
 .header-options-item-profile-login-button{

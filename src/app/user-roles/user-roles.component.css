@@ -73,6 +73,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
+    .user-roles-page-title{
+        font-size: 1.2rem;
+    }
 
 }
 
@@ -91,6 +94,5 @@
 }
 .user-roles-page-title{
     font-size: 1.2rem;
-
 }
 }
