@@ -39,7 +39,7 @@
     width: 60%;
     display: flex;
     justify-content: center;
-    height: auto;
+    height: 20rem;
 }
 
 .lower-banner-image img {
@@ -140,6 +140,7 @@ button {
     
     .lower-banner-wrapper {
         padding: 1rem 1.5rem;
+        height: 30rem;
     }
     
     .lower-banner-text-heading {
@@ -153,5 +154,8 @@ button {
     .lower-banner-text-button {
         padding: 0.25rem 0.5rem;
         font-size: 0.625rem;
+    }
+    .lower-banner-image {
+        height: 12rem;
     }
 }
