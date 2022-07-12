@@ -19,6 +19,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LoginPageComponent } from './login-page/login-page.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { UserRolesComponent } from './user-roles/user-roles.component';
+import { BenefitsComponent } from './Pages/benefits/benefits.component';
+import { LeadershipAddressComponent } from './Pages/leadership-address/leadership-address.component';
+import { TestimonialsComponent } from './Pages/testimonials/testimonials.component';
+import { FaqsComponent } from './Pages/faqs/faqs.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,10 @@ import { UserRolesComponent } from './user-roles/user-roles.component';
          LoginPageComponent,
          MainNavComponent,
          UserRolesComponent,
+         BenefitsComponent,
+         LeadershipAddressComponent,
+         TestimonialsComponent,
+         FaqsComponent,
          
   ],
   imports: [

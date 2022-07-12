@@ -9,11 +9,11 @@
     <div class="header-options-item" (click)="onNotificationClick()">
       <img class="header-options-notification" src="../../assets/pngs/notification.png" alt="">
     </div>
-    
+
     <div class="dropdown">
       <button class="dropbtn"><div class="header-options-profile"></div> Profile <img src="assets/pngs/down_arrow.png" alt=""></button>
       <div class="dropdown-content">
-        <button (click)="onLogOutClick()" >Log Out</button>
+        <a (click)="onLogOutClick()" >Log Out</a>
       </div>
     </div>
     <div *ngIf="!logFlag" class="login">
