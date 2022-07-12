@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   constructor(private _route:Router) { }
   logFlag:boolean=true;
   ngOnInit(): void {
+    
     if(localStorage.getItem('email')!=null)
     {
       this.logFlag=true;
@@ -19,7 +20,7 @@ export class HeaderComponent implements OnInit {
     }
   }
   onNotificationClick(){
-    console.log("Notidication clicked");
+    console.log("Notification clicked");
     
   }
   onLogInButtonClick()
