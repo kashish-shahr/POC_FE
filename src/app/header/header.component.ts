@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,28 +7,9 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private _route:Router) { }
-  logFlag:boolean=true;
+  constructor() { }
+
   ngOnInit(): void {
-    
-    if(localStorage.getItem('email')!=null)
-    {
-      this.logFlag=true;
-    }else{
-      this.logFlag=false;
-    }
   }
-  onNotificationClick(){
-    console.log("Notification clicked");
-    
-  }
-  onLogInButtonClick()
-  {
-    this._route.navigate(['/']);
-  }
-  onLogOutClick(){
-    localStorage.clear();
-    this.logFlag=true;
-    this._route.navigate(['/']);
-  }
+
 }

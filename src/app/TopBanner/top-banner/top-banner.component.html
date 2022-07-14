@@ -3,16 +3,16 @@
     <div class="top-banner-text">
       <div class="top-banner-text-wrapper">
         <h4 class="top-banner-text-heading">
-          {{ requiredTopBannerData[currentBannerNumber].Heading }}
+          {{ requiredTopBannerData[currentBannerNumber].heading }}
         </h4>
         <div class="top-banner-text-description">
-          {{ requiredTopBannerData[currentBannerNumber].Description }}
+          {{ requiredTopBannerData[currentBannerNumber].editorText }}
         </div>
         <button class="top-banner-text-button">View More</button>
       </div>
     </div>
     <div class="top-banner-image">
-      <img src="{{ requiredTopBannerData[currentBannerNumber].ImageUrl }}" alt=""/>
+      <img src="{{url}}{{ requiredTopBannerData[currentBannerNumber].imageUrl }}" alt=""/>
     </div>
   </div>
   <div class="top-banner-current-slide">

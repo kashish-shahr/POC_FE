@@ -1,11 +1,11 @@
 <div class="nav-container">
         <nav>
-                <a routerLink="/nav/{{linkHeader['url']}}" *ngFor="let linkHeader of navLinks; let i=index;" (click)="setActiveLink(i)">
+                <a href="#" *ngFor="let linkHeader of navLinks; let i=index;" (click)="setActiveLink(i)">
                         <div *ngIf="i===activeLink" class="nav-active-link">
-                                {{linkHeader["name"]}}
+                                {{linkHeader}}
                         </div>
                         <div *ngIf="i!==activeLink" class="nav-inactive-link">
-                                {{linkHeader["name"]}}
+                                {{linkHeader}}
                         </div>
                 </a>
         </nav>
