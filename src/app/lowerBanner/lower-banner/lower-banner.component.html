@@ -1,27 +1,27 @@
 <div class="lower-banner">
-    <div class="lower-banner-navigation lower-banner-navigation-prev " (click)="changeBannerSlide('decrement')">
-        
-        <span>&#8249;</span>
-    </div>
-    <div class="lower-banner-container">
-        <div class="lower-banner-wrapper">
-            <div class="lower-banner-text">
-              <div class="lower-banner-text-wrapper">
-                <h4 class="lower-banner-text-heading" contenteditable>
-                  {{ requiredLowerBannerData[currentBannerNumber].Heading }}
-                </h4>
-                <div class="lower-banner-text-description">
-                  {{ requiredLowerBannerData[currentBannerNumber].Description }}
-                </div>
-                <button class="lower-banner-text-button">View More</button>
-              </div>
-            </div>
-            <div class="lower-banner-image">
-              <img src="{{ requiredLowerBannerData[currentBannerNumber].ImageUrl }}" alt=""/>
-            </div>
-        </div>
-    </div>
-    <div class="lower-banner-navigation lower-banner-navigation-next" (click)="changeBannerSlide('increment')">
-        <span>&#8250;</span>
-    </div>
+  <div class="lower-banner-navigation lower-banner-navigation-prev " (click)="changeBannerSlide('decrement')">
+      
+      <span>&#8249;</span>
   </div>
+  <div class="lower-banner-container">
+      <div class="lower-banner-wrapper">
+          <div class="lower-banner-text">
+            <div class="lower-banner-text-wrapper">
+              <h4 class="lower-banner-text-heading" contenteditable>
+                {{ requiredLowerBannerData[currentBannerNumber].Heading }}
+              </h4>
+              <div class="lower-banner-text-description">
+                {{ requiredLowerBannerData[currentBannerNumber].Description }}
+              </div>
+              <button class="lower-banner-text-button">View More</button>
+            </div>
+          </div>
+          <div class="lower-banner-image">
+            <img src="{{ requiredLowerBannerData[currentBannerNumber].ImageUrl }}" alt=""/>
+          </div>
+      </div>
+  </div>
+  <div class="lower-banner-navigation lower-banner-navigation-next" (click)="changeBannerSlide('increment')">
+      <span>&#8250;</span>
+  </div>
+</div>

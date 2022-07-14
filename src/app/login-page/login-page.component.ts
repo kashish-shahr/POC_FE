@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl,Validators, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Login } from './Login';
-
+import { ActivatedRoute } from '@angular/router';
 import { LoginService } from './login.service';
 
 @Component({
@@ -13,14 +12,18 @@ import { LoginService } from './login.service';
 export class LoginPageComponent implements OnInit {
 
   loginForm:FormGroup;
-  constructor(private _route: Router, private _login: LoginService) { }
-
+  constructor(private _act:ActivatedRoute,private _route: Router, private _login: LoginService) { }
+  role:string="";
   ngOnInit(): void {
     this.loginForm=new FormGroup({
       email:new FormControl(null,[Validators.required]),
       password: new FormControl(null, [Validators.required])
     })
+    this._act.paramMap.subscribe(params=>{
+      this.role=params.get('userRole');
+    });
   }
+
   onLogin(){
     // this._login.login(this.loginForm.value).subscribe(
     //   (loginData:Login[])=>{
@@ -34,7 +37,7 @@ export class LoginPageComponent implements OnInit {
     //   }
     // )
     localStorage.setItem('email','krs');
-    this._route.navigate(['nav']);
+    this._route.navigate(['/nav']);
   }
 
 }
