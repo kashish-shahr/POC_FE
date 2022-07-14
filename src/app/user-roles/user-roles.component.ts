@@ -13,10 +13,10 @@ export class UserRolesComponent implements OnInit {
   ngOnInit(): void {
   }
   onUserRole(){
-this._route.navigate(['login/user']);
+this._route.navigate(['login']);
   }
   onAdminRole(){
-    this._route.navigate(['login/admin']);
+    this._route.navigate(['login']);
   }
 
 }

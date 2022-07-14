@@ -8,21 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   constructor() { }
-  navLinks:any;
+  navLinks:string[];
   activeLink:number;
-  
+
   ngOnInit(): void {
     this.navLinks = [
-      {"name":"Skills","url":"skills"},
-      {"name":"Benifits","url":"benefits"},
-      {"name":"Leadership Address","url":"leadership-address"},
-      {"name":"Testimonials","url":"testimonials"},
-      {"name":"FAQs","url":"faqs"},
-      
+      "Skills",
+      "Benefits",
+      "Leadership Address",
+      "Testimonials",
+      "FAQs"
     ]
-    
-   
-    
+
     this.activeLink = 0;
   }
 
