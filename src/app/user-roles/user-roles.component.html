@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="UserRoles">
+    <div class="user-roles-container">
+        <div class="user-role-container-item user-roles-page-title">
+            Welcome to Swiggy Skill Academy
+        </div>
+        <div class="user-role-container-item user-roles-role-cards">
+            <div class="user-role-card-container">
+                <div class="user-role-card">
+                    <img src="assets/pngs/profile1.png" alt="">
+                </div>
+                <div (click)="onAdminRole()" class="user-role-card-button">
+                    Admin
+                </div>
+            </div>
+            <div class="user-role-card-container">
+                <div class="user-role-card">
+                    <img src="assets/pngs/profile2.png" alt="">
+                </div>
+                <div (click)="onUserRole()" class="user-role-card-button">
+                    User
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

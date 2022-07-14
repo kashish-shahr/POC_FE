@@ -1,0 +1,98 @@
+.UserRoles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+
+.user-roles-container {
+    width: 50%;
+    display: grid;
+    gap: 2rem;
+}
+
+.user-roles-page-title {
+    font-size: 1.875rem;
+}
+
+.user-role-container-item  {
+    margin: 0 auto;
+}
+
+.user-roles-role-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+
+.user-role-card {
+    width: 100%;
+    background-color: #c8d7f3;
+}
+
+
+.user-role-card img {
+    width: inherit;
+}
+
+.user-role-card-button {
+    width: fit-content;
+    margin: 1rem auto 0rem auto;
+    border: 1px solid #1a1b1f;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    color: white;
+    background-color: #1a1b1f;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+    .user-roles-container {
+        width: 55%;
+        display: grid;
+        gap: 2rem;
+    }
+    .user-roles-role-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .user-roles-container {
+        width: 60%;
+        display: grid;
+        gap: 2rem;
+    }
+    .user-roles-role-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    .user-roles-page-title{
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 479px) {
+.user-roles-container {
+    width: 80%;
+    display: grid;
+    gap: 2rem;
+    margin:1rem;
+}
+.user-roles-role-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+.user-roles-page-title{
+    font-size: 1.2rem;
+}
+}

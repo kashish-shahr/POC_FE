@@ -5,8 +5,12 @@
 }
 
 .lower-banner-container {
+    
     width: inherit;
     background-color: #f1f3f7;
+    border: 1px solid #e2e4e7;
+    box-shadow: 3px  0px 13px 0px rgba(55, 56, 56, 0.4);
+
 }
 
 .lower-banner-current-slide {
@@ -15,11 +19,11 @@
 
 .lower-banner-wrapper{
     width: inherit;
-    padding: 3.125rem 6.25rem;
+    padding: 3.125rem 7.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 60px;
 }
 
 .lower-banner-text-wrapper {
@@ -32,13 +36,15 @@
 }
 
 .lower-banner-image {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
+    height: 20rem;
 }
 
 .lower-banner-image img {
     width: 100%;
+    border-radius: 50%;
 }
 
 button {
@@ -59,10 +65,34 @@ button {
 }
 
 .lower-banner-navigation {
-    font-size: 3rem;
-    cursor: pointer;
-}
+    
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  color: #9eb2d5;
+  font-size: 2rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0.2s;
+  cursor: pointer;
 
+      }
+      .lower-banner-navigation:hover{
+        background-color: #f57c26;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-2px);
+      }
+
+      .lower-banner-navigation-next{
+        /* background-color: red; */
+        margin-left:-30px;
+      }
+      .lower-banner-navigation-prev{
+        /* background-color: green; */
+        margin-right:-20px;
+        z-index: 0;
+    }
 @media screen and (max-width: 991px) {
     .lower-banner {
         margin: 1rem 1.25rem;
@@ -89,6 +119,7 @@ button {
     
     .lower-banner-image img {
         width: 100%;
+        height: 13rem;
     }
 
     .lower-banner-text-heading {
@@ -109,6 +140,7 @@ button {
     
     .lower-banner-wrapper {
         padding: 1rem 1.5rem;
+        height: 30rem;
     }
     
     .lower-banner-text-heading {
@@ -122,5 +154,8 @@ button {
     .lower-banner-text-button {
         padding: 0.25rem 0.5rem;
         font-size: 0.625rem;
+    }
+    .lower-banner-image {
+        height: 12rem;
     }
 }

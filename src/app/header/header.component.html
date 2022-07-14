@@ -3,10 +3,22 @@
   <div class="header-language">
     <span>Language <strong>English</strong> | Tamil | Hindi</span>
   </div>
+
+  <div *ngIf="logFlag" >
   <div class="header-options">
-    <button class="header-options-item">Notification</button>
-    <select class="header-options-item">
-      <option>Profile</option>
-    </select>
+    <div class="header-options-item" (click)="onNotificationClick()">
+      <img class="header-options-notification" src="../../assets/pngs/notification.png" alt="">
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn"><div class="header-options-profile"></div> Profile <img src="assets/pngs/down_arrow.png" alt=""></button>
+      <div class="dropdown-content">
+        <a (click)="onLogOutClick()" >Log Out</a>
+      </div>
+    </div>
+    <div *ngIf="!logFlag" class="login">
+      <button (click)="onLogInButtonClick()">Log In</button>
+    </div>
+    </div>
   </div>
 </header>
